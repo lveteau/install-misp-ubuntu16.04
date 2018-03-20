@@ -12,8 +12,6 @@ For a deployment of MISP more ready for a production environment you can use
 
 MISP will be automatically deployed in Ubuntu 16.04
 
-.. code-block:: bash
-
     $ git clone https://github.com/lveteau/install-misp-ubuntu16.04.git /tmp/MISP
     $ cd /tmp/MISP/
     $ sh install.sh
