@@ -151,16 +151,16 @@ sudo -u www-data -H git clone https://github.com/CybOXProject/python-cybox.git
 sudo -u www-data -H git clone https://github.com/STIXProject/python-stix.git
 cd $PATH_TO_MISP/app/files/scripts/python-cybox
 sudo -u www-data -H git checkout v2.1.0.12
-python setup.py install > /dev/null
+python3 setup.py install > /dev/null
 cd $PATH_TO_MISP/app/files/scripts/python-stix
 sudo -u www-data -H git checkout v1.1.1.4
-python setup.py install > /dev/null
+python3 setup.py install > /dev/null
 # install mixbox to accomodate the new STIX dependencies:
 cd $PATH_TO_MISP/app/files/scripts/
 sudo -u www-data -H git clone https://github.com/CybOXProject/mixbox.git
 cd $PATH_TO_MISP/app/files/scripts/mixbox
 sudo -u www-data -H git checkout v1.0.2
-python setup.py install > /dev/null
+python3 setup.py install > /dev/null
 
 
 echo "--- Retrieving CakePHP… ---"
